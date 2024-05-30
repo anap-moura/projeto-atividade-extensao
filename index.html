@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Marmitas da Tia Sil</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Cardápio do Dia:</h2>
+            <div class="menu-category">
+                <h3>Pratos do Dia</h3>
+                <div class="menu-item">
+                    <h4>Strogonoff de frango</h4>
+                    <p>Arroz, strogonoff e batata palha. Acompanha salada. - R$ 20,00</p>
+                    <button onclick="adicionarAoCarrinho('Strogonoff de frango', 20.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <h4>Panqueca de Carne</h4>
+                    <p>Arroz, feijão e 02 panquecas de carne. Acompanha salada. - R$ 18,00</p>
+                    <button onclick="adicionarAoCarrinho('Panqueca de Carne', 18.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <h4>Costela com Mandioca</h4>
+                    <p>Arroz, feijão e costela feita na pressão com mandiocas. Acompanha salada. - R$ 25,00</p>
+                    <button onclick="adicionarAoCarrinho('Costela com Mandioca', 25.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <h4>Bife acebolado</h4>
+                    <p>Arroz, feijão, bife acebolado e batata frita. Acompanha salada. - R$ 22,00</p>
+                    <button onclick="adicionarAoCarrinho('Bife acebolado', 22.00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Bebidas</h3>
+                <div class="menu-item">
+                    <h4>Suco de Laranja</h4>
+                    <p>Copo de 300ml - R$ 5,00</p>
+                    <button onclick="adicionarAoCarrinho('Suco de Laranja', 5.00)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="menu-item">
+                    <h4>Refrigerante</h4>
+                    <p>Lata de 350ml - R$ 4,00</p>
+                    <button onclick="adicionarAoCarrinho('Refrigerante', 4.00)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itens-carrinho">
+            </ul>
+            <p id="total">Total: R$ 0,00</p>
+        </section>
+    </main>
+    <footer>
+        <p>Horário de Funcionamento: Seg - Sex: 10:00 - 20:00</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
